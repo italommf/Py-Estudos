@@ -1,5 +1,8 @@
 import tkinter as tk
-from tkinter import ttk
+# from tkinter import ttk
+import ttkbootstrap as ttk # o bootstrap faz os frames mais modernos
+
+# ======================================================
 
 # funcao a ser chamada no pressionar do botao
 def minha_funcao_conversora():
@@ -7,12 +10,11 @@ def minha_funcao_conversora():
     km_output = milhas_input * 1.61
     saida_string.set(km_output) # saida_string é a variavel de saida setada no frame em saida, .set() seta o valor da variavel passada como parametro
     
-
-
+# ======================================================
 
 # Janela principal
-
-janela = tk.Tk()
+#janela = tk.Tk()
+janela = ttk.Window(themename = 'darkly') # com Window do bootstrap temos mais opções para personalizar
 janela.title('Conversor de Milhas para km') # texto da barra de titulo
 janela.geometry('400x200') # tamanho da janela principal
 
