@@ -22,13 +22,16 @@ janela.geometry('800x600')
 # janela de digitação
 tk.Text(master = janela).pack(pady = 10) # pady controla a posição vertical da janela de texto 
 
-# widgets
-texto = ttk.Label(master = janela, text = "texto abaixo da caixa de texto")
+# texto na tela abaixo da caixa grande
+
+texto_novo = tk.StringVar()
+
+texto = ttk.Label(master = janela, text = 'teste', textvariable = texto_novo)
 texto.pack()
 
 # entrada (input)
 entrada_str = tk.StringVar() # entrada caixa linha
-entrada = ttk.Entry(master = janela, textvariable = entrada_str) # caixa de texto (linha unica)
+entrada = ttk.Entry(master = janela, textvariable = texto_novo) # caixa de texto (linha unica)
 entrada.pack(pady = 10) 
 
 # botão
