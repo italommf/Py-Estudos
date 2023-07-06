@@ -48,3 +48,8 @@ saida.pack(pady = 25)
 # Rodando a janela com os widgets
 janela.mainloop()
 
+'''
+.mainloop() faz o update da interface, ela checa os eventos
+(cliques em botões, movimentos do mouse, fechamento de janela...)
+'''
+
