@@ -49,20 +49,5 @@ redondo2 = ttk.Radiobutton(janela,
                            command = lambda: print('botao redondo 2'))                          
 redondo2.pack()                               
 
-
-# exercicio
-'''
-criar outro checkbutton e 2 radio buttons
-# radiobutton
-    os valores dos botoes são A e B printando os valores dos checkbuttons em cada um
-
-
-
-'''
-
-
-
-
-
 #run
 janela.mainloop()
